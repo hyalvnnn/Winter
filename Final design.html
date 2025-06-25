@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wujudkan Impianmu ke Jerman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f8f8;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.02) 0%,
+          rgba(0, 0, 0, 0.02) 1px,
+          transparent 1px,
+          transparent 10px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          rgba(0, 0, 0, 0.02) 0%,
+          rgba(0, 0, 0, 0.02) 1px,
+          transparent 1px,
+          transparent 10px
+        );
+      background-size: 20px 20px;
+      background-attachment: fixed;
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+      color: #333;
+    }
+    .card-shadow {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .card-shadow:hover {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+    /* Updated header background with a luxurious gold-black gradient */
+    .header-background {
+        background-image: linear-gradient(to right, #1a1a1a, #333333, #5a4a2f); /* Deep black/grey to muted gold/bronze */
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    /* Style for the investment box background */
+    .investment-box-bg {
+        background: radial-gradient(circle at center, #3c546e 0%, #2C3E50 100%); /* Deep charcoal with subtle gradient */
+        color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    /* Updated credibility section background for consistency */
+    .credibility-section {
+        background-color: #1E2A3A; /* Dark blue-grey for luxury */
+        color: white; /* Ensure text is readable on dark background */
+    }
+    .credibility-section h3 {
+        color: white; /* Header text white */
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); /* Subtle white shadow for crispness */
+    }
+    .credibility-section .text-gray-700 { /* Paragraph text within credibility cards */
+        color: #d1d5db; /* Light grey for body text */
+    }
+    .credibility-section .text-blue-500 { /* Links within credibility cards */
+        color: #93c5fd; /* Lighter blue for links */
+    }
+    .btn-primary-style {
+        background-color: #F97316;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary-style:hover {
+        background-color: #EA580C;
+        transform: scale(1.03);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .text-highlight {
+        color: #F97316;
+        font-weight: 700;
+    }
+    .cta-green-bg {
+        background-color: #22C55E;
+        color: white;
+    }
+
+    .header-background h1 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    .heading-shadow {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes slideInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+    }
+    .animate-slideInUp {
+      animation: slideInUp 0.8s ease-out forwards;
+    }
+    .animate-pulse-subtle {
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .animate-delay-100 { animation-delay: 0.1s; }
+    .animate-delay-200 { animation-delay: 0.2s; }
+    .animate-delay-300 { animation-delay: 0.3s; }
+    .animate-delay-400 { animation-delay: 0.4s; }
+    .animate-delay-500 { animation-delay: 0.5s; }
+    .animate-delay-600 { animation-delay: 0.6s; }
+    .animate-delay-700 { animation-delay: 0.7s; }
+    .animate-delay-800 { animation-delay: 0.8s; }
+  </style>
+</head>
+<body>
+  <section class="header-background px-4 py-12 text-center sm:px-6 md:py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-white font-extrabold text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            Wujudkan Impianmu ke <span class="font-black">Jerman</span>
+        </h1>
+        <p class="text-white text-lg leading-relaxed mt-4 sm:text-xl md:text-2xl">
+            Gerbang Suksesmu di Jerman Dimulai Sekarang!
+        </p>
+    </div>
+  </section>
+
+  <section class="px-4 py-12 max-w-2xl mx-auto sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold leading-tight mb-6 text-center heading-shadow">Kenalan Dulu Yuk!</h2>
+    <div class="bg-white p-8 rounded-lg card-shadow animate-slideInUp animate-delay-200">
+      <p id="alvin-intro-text" class="text-lg leading-relaxed text-gray-700 mb-4">
+        Hai! Saya <span class="font-semibold text-highlight">Alvin Ramadhan Putra Prasetya</span>. Saya di sini untuk membimbing Anda menguasai Bahasa Jerman.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-4">
+        Saya bukan hanya mentor, tapi teman seperjalanan Anda. Saya mengerti betul rasanya memulai dari nol, karena saya pernah di posisi Anda.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-4">
+        Pengalaman ini membentuk metode ajar saya: empatik, terstruktur, dan adaptif.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700">
+        Bersama saya, belajar Jerman jadi menyenangkan dan efektif.
+      </p>
+    </div>
+  </section>
+
+  <section class="px-4 py-12 max-w-2xl mx-auto sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-8 text-center heading-shadow">Program Ini Sempurna Untukmu Jika Kamu:</h3>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-100">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Bermimpi karir/studi di Jerman? Bahasa Jerman kuncinya.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-200">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Pemula total yang butuh panduan jelas, langkah demi langkah.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-300">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Siap ujian A1 Goethe, butuh bimbingan & tips jitu.
+        </p>
+      </div>
+       <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-400">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Suka belajar tatap muka, interaktif, dan nyaman.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-4 py-12 max-w-2xl mx-auto sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-8 text-center heading-shadow">Apa yang Akan Kamu Dapatkan:</h3>
+    <div class="space-y-8">
+      <div class="flex items-start space-x-6 bg-white p-6 rounded-lg card-shadow animate-slideInUp animate-delay-100">
+        <div class="flex-shrink-0 bg-blue-100 rounded-full p-4">
+          <i class="fas fa-book text-blue-700 text-2xl"></i>
+        </div>
+        <div>
+          <h4 class="font-semibold text-xl leading-snug mb-2 text-gray-900">Dasar Jerman (Salam, Angka, Alfabet)</h4>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Fondasi kuat dari nol.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-6 bg-white p-6 rounded-lg card-shadow animate-slideInUp animate-delay-200">
+        <div class="flex-shrink-0 bg-blue-100 rounded-full p-4">
+          <i class="fas fa-graduation-cap text-blue-700 text-2xl"></i>
+        </div>
+        <div>
+          <h4 class="font-semibold text-xl leading-snug mb-2 text-gray-900">Tata Bahasa A1 Dijamin Paham!</h4>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Artikel, kata kerja, struktur kalimat dasar—mudah dipahami.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-6 bg-white p-6 rounded-lg card-shadow animate-slideInUp animate-delay-300">
+        <div class="flex-shrink-0 bg-blue-100 rounded-full p-4">
+          <i class="fas fa-comments text-blue-700 text-2xl"></i>
+        </div>
+        <div>
+          <h4 class="font-semibold text-xl leading-snug mb-2 text-gray-900">Komunikasi Praktis Sehari-hari</h4>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Arah, belanja, makan, interaksi umum.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-6 bg-white p-6 rounded-lg card-shadow animate-slideInUp animate-delay-400">
+        <div class="flex-shrink-0 bg-blue-100 rounded-full p-4">
+          <i class="fas fa-laptop-code text-blue-700 text-2xl"></i>
+        </div>
+        <div>
+          <h4 class="font-semibold text-xl leading-snug mb-2 text-gray-900">Latihan Interaktif</h4>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Teks, audio, video untuk pemahaman mendalam.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-6 bg-white p-6 rounded-lg card-shadow animate-slideInUp animate-delay-500">
+        <div class="flex-shrink-0 bg-blue-100 rounded-full p-4">
+          <i class="fas fa-scroll text-blue-700 text-2xl"></i>
+        </div>
+        <div>
+          <h4 class="font-semibold text-xl leading-snug mb-2 text-gray-900">Simulasi Ujian A1 & Strategi Ampuh</h4>
+          <p class="text-lg leading-relaxed text-gray-700">
+            Tips & trik dari pengalaman langsung agar percaya diri.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="credibility-section px-4 py-12 text-center max-w-2xl mx-auto rounded-xl mt-12 shadow-lg sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-8">Kredibilitas Saya: Bukti Nyata Kompetensi ✨</h3>
+    <div class="space-y-6">
+      <div class="bg-white rounded-lg card-shadow p-6 transition duration-300 hover:scale-105 hover:opacity-90 animate-slideInUp animate-delay-100">
+        <div class="grid grid-cols-5 items-start gap-4">
+          <i class="fas fa-user-check text-4xl text-blue-400 justify-self-center"></i>
+          <div class="col-span-4 text-left">
+            <h4 class="font-semibold text-xl leading-snug mb-1 text-gray-900">Goethe-Zertifikat A1</h4>
+            <p class="text-lg leading-relaxed text-gray-900 mb-2">
+              Mendapatkan predikat "Sangat baik" dan mendapatkan poin (91/100)
+            </p>
+            <a href="https://drive.google.com/file/d/1jSLVrUGyJjbJRl3dpV9sZqnoKEZIp5BI/view?usp=drivesdk" target="_blank" class="text-blue-900 hover:underline font-semibold text-sm">Lihat Sertifikat</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg card-shadow p-6 transition duration-300 hover:scale-105 hover:opacity-90 animate-slideInUp animate-delay-200">
+        <div class="grid grid-cols-5 items-start gap-4">
+          <i class="fas fa-file-alt text-4xl text-blue-400 justify-self-center"></i>
+          <div class="col-span-4 text-left">
+            <h4 class="font-semibold text-xl leading-snug mb-1 text-gray-900">Altissia Assessment</h4>
+            <p class="text-lg leading-relaxed text-gray-900 mb-2">
+              Meraih level B2 (total) & C1 (Listening).
+            </p>
+            <a href="https://drive.google.com/file/d/1jCsXDeWDs1oGJV6BJaXA2qFF3eyXpN7z/view?usp=drivesdk" target="_blank" class="text-blue-900 hover:underline font-semibold text-sm">Lihat Sertifikat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-4 py-12 max-w-2xl mx-auto mt-12 sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-3 text-center heading-shadow">Investasi Terbaik untuk Masa Depanmu di Jerman</h3>
+    <div class="investment-box-bg rounded-xl p-8 max-w-md mx-auto animate-slideInUp animate-delay-200">
+      <p class="text-white text-4xl font-extrabold leading-tight mb-4 text-center">Rp 1.500.000 <span class="text-base font-normal">untuk 20 sesi (60 menit per sesi)</span></p>
+      <p class="text-white text-lg leading-relaxed mb-4 text-center">
+        Ini bukan biaya, tapi investasi cerdas untuk masa depan cerahmu di Jerman.
+      </p>
+      <ul class="list-none p-0 text-center text-white text-lg leading-relaxed mb-8">
+          <li>Nyaman belajar dari rumah (area Pangkalpinang).</li>
+          <li>Materi digital & worksheet lengkap, mudah diakses.</li>
+      </ul>
+      <a
+        href="https://wa.me/6283133411449?text=Halo%20Alvin%2C%20saya%20tertarik%20dengan%20les%20bahasa%20Jerman%20A1.%20Bisakah%20saya%20mendapatkan%20informasi%20lebih%20lanjut%20mengenai%20pendaftaran%3F"
+        target="_blank"
+        class="w-full bg-white text-highlight btn-primary-style flex justify-center items-center"
+      >
+        Daftar Sekarang
+      </a>
+    </div>
+  </section>
+
+  <section class="px-4 py-12 max-w-2xl mx-auto mt-12 sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-8 text-center heading-shadow">Kenapa Sih Harus Pilih Saya sebagai Mentor Kamu? 🤔</h3>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-100">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Memahami kesulitan pemula & siap membimbing.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-200">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Bersertifikasi Goethe A1 & menguasai struktur ujian.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow flex items-start animate-slideInUp animate-delay-300">
+        <i class="fas fa-check-circle text-emerald-500 text-2xl mr-4 flex-shrink-0 mt-1"></i>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Suasana belajar santai, fokus, & efektif.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-green-bg px-4 py-12 max-w-2xl mx-auto rounded-xl mt-12 text-white text-center shadow-lg sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold leading-tight mb-6 heading-shadow">Masih Ada Pertanyaan? Jangan Sungkan! 💬</h3>
+    <p class="mb-8 max-w-md mx-auto text-lg leading-relaxed animate-slideInUp animate-delay-200">
+      Hubungi saya via WhatsApp untuk info lebih lanjut. Saya siap bantu!
+    </p>
+    <div class="flex justify-center animate-slideInUp animate-delay-300">
+        <a href="https://wa.me/6283133411449" target="_blank">
+            <button
+                class="bg-white text-emerald-600 font-semibold text-lg py-3 px-10 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105 animate-pulse-subtle"
+                type="button"
+            >
+                Chat via WhatsApp
+            </button>
+        </a>
+    </div>
+  </section>
+
+  <footer class="px-4 py-8 max-w-2xl mx-auto text-center text-gray-600 text-sm leading-relaxed mt-12 sm:px-6 lg:px-8">
+    <p class="mb-1">Alvin Ramadhan Putra Prasetya</p>
+    <p>&copy; 2025</p>
+  </footer>
+</body>
+</html>
